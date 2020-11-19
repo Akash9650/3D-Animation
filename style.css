@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1100px;
+
+}
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* background: lightpink; */
+}
+.card{
+    transform-style: preserve-3d;
+    /* transition: 0.3s; */
+    min-height: 80vh;
+    width: 35rem;
+    /* background: lightpink; */
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2),
+                0 0 50px rgba(0, 0, 0, 0.2);
+    padding: 0 5rem;
+    border-radius: 30px;
+}
+.sneaker{
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sneaker img{
+    width: 18rem;
+    position: absolute;
+    left: -40px;
+    top: 20px;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+.circle{
+    width: 13rem;
+    height: 13rem;
+    background: linear-gradient(to right,rgba(245,70,66,0.75),
+                                            rgba(8,83,156,0.75));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.info{
+    position: relative;
+    top: 16rem;
+}
+.info h1{
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+}
+.info h3{
+    font-size: 1.3rem;
+    padding: 1.4rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+.size{
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+.size button{
+    padding: 0 1.4em;
+    margin-left: 5px;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+.size button.active{
+    background: #585858;
+    color: #fff;
+}
+.purchase{
+    margin-top: 2em;
+    
+}
+.purchase button{
+    width: 100%;
+    padding: 1rem 0;
+    background: #f54642;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bolder;transition: all 0.75s ease-out;
+}
